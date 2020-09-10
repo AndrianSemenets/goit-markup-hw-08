@@ -51,7 +51,7 @@ img {
 }
 
 /* Navigation*/
-.site-navigation .underline {
+.site-navigation .link.underline {
 	color: var(--active);
 }
 
