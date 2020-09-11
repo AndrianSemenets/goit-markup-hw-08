@@ -26,7 +26,8 @@ body {
   position: relative;
   color: var(--primary-text);
   background-color: var(--white);
-  font-family: "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
   letter-spacing: 0.03em;
 }
 
