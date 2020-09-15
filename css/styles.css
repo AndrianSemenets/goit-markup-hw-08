@@ -97,6 +97,7 @@ img {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	text-decoration: none;
+	transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-navigation .item:not(:last-child),
@@ -297,26 +298,6 @@ color: var(--active);
 	border-radius: 4px;
 }
 
-.buttons {
-  color: var(--primary-text);
-  background-color: var(--gray-bgc);
-  border-color: var(--gray-bgc);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.87;
-  align-items: center;
-  letter-spacing: 0.03em;
-  border-radius: 4px;
-}
-
-.buttons:hover {
-background-color: var(--active);
-color: var(--white);
-}
-.buttons:focus{
-color:var(--white)
-}
-
 /*advantages*/
 .advantages {
 padding: 94px 0 94px;}
@@ -483,13 +464,15 @@ margin-bottom: 16px;
 	height: 44px;
 	border-radius: 50%;
 	background-repeat: no-repeat;
-  background-position: center;
+	background-position: center;
+	transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team .icon {
 	width: 20px;
 	height: 20px;
 	fill: var(--decoration-color);
+	transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team .link:hover .icon,
@@ -536,7 +519,6 @@ margin-bottom: 16px;
 	justify-content: center;
 	width: 170px;
 	height: 90px;
-
 	border: 1px solid var(--decoration-color);
   border-radius: 4px;
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -655,7 +637,7 @@ cursor: pointer;
 	background-repeat: no-repeat;
 	background-position: center;
   background-color: rgba(255, 255, 255, 0.1);
-  	transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join .item {
@@ -697,7 +679,8 @@ cursor: pointer;
 .nav-list .buttons {
     color: var(--primary-text);
     background-color: var(--gray-bgc);
-    border-color: var(--gray-bgc);
+		border-color: var(--gray-bgc);
+		border:0px;
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
@@ -706,7 +689,8 @@ cursor: pointer;
     align-items: center;
     display: block;
     padding: 6px 22px;
-    text-decoration: none;
+		text-decoration: none;
+		cursor: pointer;
 }
 
 .nav-list .item:not(:last-child) {
