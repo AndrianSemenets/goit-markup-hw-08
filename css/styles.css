@@ -334,7 +334,7 @@ color: var(--active);
 }
 
 .form-input:focus {
-	border: 1px solid var(--assent-color);
+	border: 1px solid var(--active);
 }
 
 .form-icon {
@@ -343,7 +343,6 @@ color: var(--active);
 	left: 12px;
 	width: 18px;
 	height: 18px;
-
 	fill: var(--title-text-color);
 }
 
@@ -356,7 +355,6 @@ color: var(--active);
 	resize: none;
 	height: 120px;
 	overflow: auto;
-
 	font-size: 14px;
 }
 
@@ -378,12 +376,11 @@ color: var(--active);
 	width: 16px;
 	height: 15px;
 	margin-right: 8px;
-
 	border-radius: 2px;
-	border: 2px solid var(--title-text-color);
-	background-color: var(--primary-bg-color);
-	fill: #ffffff;
-	stroke: #ffffff;
+	border: 2px solid var(--primary-text);
+	background-color: var(--white);
+	fill: var(--white);
+	stroke: var(--white);
 	stroke-width: 0.2;
 }
 
@@ -674,10 +671,10 @@ margin-bottom: 16px;
 /*footer*/
 
 .footer {
-background-color:var(--background-dark);
-padding-top: 60px;
-padding-bottom: 60px;
-color: rgba(255, 255, 255, 0.6)
+	background-color:var(--background-dark);
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: rgba(255, 255, 255, 0.6)
 }
 
 .footer .header {
@@ -776,7 +773,6 @@ cursor: pointer;
 	height: 50px;
 	margin-right: 12px;
 	padding: 15px 16px;
-
 	color: inherit;
 	border-radius: 4px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
