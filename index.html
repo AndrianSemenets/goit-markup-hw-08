@@ -5,7 +5,7 @@
     <meta name="WebStudio" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio (Version 2.0)</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=fallback"
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="css/styles.css">
     </head>
@@ -51,59 +51,74 @@
     </div>  
   </section>
 
-  <!-- feedback   form -->
+  <!-- feedback form -->
   <section class="dropbox flexbox is-hidden" data-modal>
     <div class="modal">
-      <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-					<div class="modal-body flexbox">
-						<label>
+      <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+					<form class="form flexbox">
+						<label class="form-field">
 							Имя
-							<input class="modal-input" type="text" />
+              <input class="form-input" type="text" name="name" />
+              <svg class="form-icon">
+						<use href="./"></use>
+            </svg>
 						</label>
-						<label>
+						<label class="form-field">
 							Телефон
-							<input class="modal-input" type="tel" />
-						</label>
-						<label>
+							<input class="form-input" type="tel" name="phone-number"/>
+              <use href="./"></use>
+            </svg>
+            </label>
+						<label class="form-field">
 							Почта
-							<input class="modal-input" type="email" />
-						</label>
-						<label>
+							<input class="form-input" type="email" name="email" />
+              <use href="./"></use>
+            </svg>
+            </label>
+						<label class="form-field comment">
 							Комментарий
-							<textarea class="modal-input"></textarea>
+              <textarea
+              placeholder="Введите текст"
+              class="form-input form-textarea"
+              name="comment"
+              id="comment"
+            ></textarea>
 						</label>
-						<label>
-							<input type="checkbox" />
-							<p>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
+						<label class="form-field form-agreement">
+							<input class="check-input visually-hidden" type="checkbox" name="policy" />
+							<svg class="form-icon">
+								<use href="./"></use>
+							</svg>
+							Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
 						</label>
-						<button>Отправить</button>
+						<button class="send-btn" type="submit">Отправить</button>
 						<button class="close-btn" aria-label="Закрыть" data-modal-close>
 							<svg class="icon">
 								<use href="./img/sprite.svg#close"></use>
 							</svg>
 						</button>
-					</div>
+					</form>
 				</div>
 			</section>
     
-    <!--Отличия-->
+    <!--advantages-->
     <section class="advantages">
     <div class="container">
     <ul class="advantages-list flexbox list">
     <li class="item icon-attention">
-    <h3 class="advantages-title">Внимание к деталям</h3>
+    <h3 class="advantages-title section-subtitle">Внимание к деталям</h3>
     <p class="advantages-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
     </li>
     <li class="item icon-clock">
-    <h3 class="advantages-title">Пунктуальность</h3>
+    <h3 class="advantages-title section-subtitle">Пунктуальность</h3>
     <p class="advantages-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
     </li>
     <li class="item icon-plan">
-    <h3 class="advantages-title">Планирование</h3>
+    <h3 class="advantages-title section-subtitle">Планирование</h3>
     <p class="advantages-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
     </li>
     <li class="item icon-cosmic">
-    <h3 class="advantages-title">Современные технологии</h3>
+    <h3 class="advantages-title section-subtitle">Современные технологии</h3>
     <p class="advantages-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
     </li>
     </ul>
@@ -112,19 +127,19 @@
 
     <!--what we do container-->
     <section class="service">
-<h2  class="service-title">Чем мы занимаемся</h2>
+<h2  class="service-title section-title">Чем мы занимаемся</h2>
 <div class="container">
 <ul class="list flexbox">
 <li class="item">
-<h3 class="service-text">Десктопные приложения</h3>
+<h3 class="service-text section-subtitle">Десктопные приложения</h3>
 <img src="./img/1.png" alt="Десктопные приложения" width="370"></li>
 
 <li class="item">
-<h3 class="service-text">Мобильные приложения</h3>
+<h3 class="service-text section-subtitle">Мобильные приложения</h3>
 <img src="./img/2.png" alt="Мобильные приложения" width="370"></li>
 
 <li class="item">
-<h3 class="service-text">Дизайнерские решения</h3>
+<h3 class="service-text section-subtitle">Дизайнерские решения</h3>
 <img src="./img/3.png" alt="Дизайнерские решения" width="370"></li>
 </ul>
 </div>
@@ -133,7 +148,7 @@
 <!--our team-->
 <section class="our-team">
 <div class="container">
-<h2 class="team-title">Наша команда</h2>
+<h2 class="team-title section-title">Наша команда</h2>
 <ul class="list">
 <li class="item">
 <img src="./img/pd.png" alt="Игорь Демьяненко" width="270" height="260">
@@ -289,10 +304,10 @@
 </div>
 </section>
 
-<!-- Постоянные клиенты -->
+<!-- Clients -->
 <section class="clients">
   <div class="container">
-    <h2 class="clients-title">Постоянные клиенты</h2>
+    <h2 class="clients-title section-title">Постоянные клиенты</h2>
     <ul class="list">
       <li class="item">
         <a class="link" href="#">
@@ -355,7 +370,7 @@
 </div>
 
 <div class="join">
-  <h2 class="join-title">Присоединяйтесь</h2>
+  <h2 class="footer-title">Присоединяйтесь</h2>
   <ul class="social flexbox list">
     <li class="item">
       <a class="instagram link" href="" aria-label="Instagram">
@@ -388,7 +403,7 @@
   </ul>
 </div>
 <div class="subscribe">
-  <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+  <h2 class="footer-title">Подпишитесь на рассылку</h2>
   <form class="subscribe-form">
     <label class="subscribe-field">
       <input class="subscribe-input" type="email" name="email" placeholder="E-mail" />
