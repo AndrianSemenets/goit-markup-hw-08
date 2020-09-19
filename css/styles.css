@@ -781,7 +781,9 @@ cursor: pointer;
 	border-radius: 4px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	background-color: var(--background-dark);
-}
+	outline: transparent;
+	}
+
 
 .subscribe-button {
 	display: flex;
@@ -803,7 +805,6 @@ cursor: pointer;
 	width: 24px;
 	height: 24px;
 	margin-left: 10px;
-
 	background-image: url(../img/telegram.svg);	
 	background-repeat: no-repeat;
 	background-position: center;
