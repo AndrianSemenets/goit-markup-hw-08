@@ -44,7 +44,7 @@
     <main>
     <section class="effective-desisions flexbox">
       <div class="hero-container">
-    <h1 class="effective-title">Эффективные решения</br> для вашего бизнеса</h1>
+    <h1 class="effective-title">Эффективные решения<br/> для вашего бизнеса</h1>
     <button class="button" data-modal-open>Заказать услугу</button>
     </div>  
   </section>
@@ -84,13 +84,16 @@ name="comment"
 id="comment"
 ></textarea>
 </label>
-<label class="form-field form-agreement">
-<input class="check-input visually-hidden" type="checkbox" name="policy" />
-<svg class="form-icon">
-<use href="./img/sprite.svg#check"></use>
-</svg>
-Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+
+
+<label for="checkbox" class="checkbox-label">
+<input type="checkbox" class="checkbox visually-hidden" id="checkbox" />
+<span class="checkbox-title">Соглашаюсь с рассылкой и
+  принимаю</span> <a href="/" class="link"> Условия
+  договора</a>
+
 </label>
+
 <button class="send-btn" type="submit">Отправить</button>
 <button class="close-btn" aria-label="Закрыть" data-modal-close>
 <svg class="icon">
@@ -372,7 +375,7 @@ id="comment"
 </div>
 
 <div class="join">
-  <h2 class="footer-title">Присоединяйтесь</h2>
+  <b class="footer-title">Присоединяйтесь</b>
   <ul class="social flexbox list">
     <li class="item">
       <a class="instagram link" href="" aria-label="Instagram">
@@ -405,12 +408,10 @@ id="comment"
   </ul>
 </div>
 <div class="subscribe">
-  <h2 class="footer-title">Подпишитесь на рассылку</h2>
+  <b class="footer-title">Подпишитесь на рассылку</b>
   <form class="subscribe-form">
-    <label class="subscribe-field">
       <input class="subscribe-input" type="email" name="email" placeholder="E-mail" />
-    </label>
-    <button class="subscribe-button">Подписаться</button>
+    <button class="subscribe-button" type="submit">Подписаться</button>
   </form>
 </div>
 </div>
