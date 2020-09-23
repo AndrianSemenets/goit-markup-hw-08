@@ -393,7 +393,7 @@ color: var(--active);
   color: var(--active);
   text-decoration: underline;
   outline-color: var(--active);
-  margin-left: 2px;
+  margin-left: 3px;
 }
 
 .checkbox-title::before {
