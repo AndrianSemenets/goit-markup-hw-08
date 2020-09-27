@@ -1,0 +1,135 @@
+.footer {
+  background-color: getColor("background-dark");
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.list {
+  @include flexBox(center, center);
+}
+
+.link {
+  font-style: normal;
+  color: inherit;
+}
+
+.address {
+  color: getColor("white");
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: getColor("active");
+  cursor: pointer;
+}
+
+.address .contacts {
+  color: getColor("ctcs");
+}
+
+.address a:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.street {
+  margin-top: 20px;
+}
+
+.footer .logo-header {
+  color: getColor("white");
+}
+
+.footer-address {
+  margin-right: 70px;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.join .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join .item {
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.join .item:last-child {
+  margin-right: 0;
+}
+
+.join .icon {
+  width: 20px;
+  height: 20px;
+  fill: getColor("white");
+}
+
+.join {
+  margin-right: 93px;
+}
+
+.footer-title {
+  color: getColor("white");
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  color: inherit;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: getColor("background-dark");
+  outline: transparent;
+}
+
+.subscribe-button {
+  display: flex;
+  justify-content: center;
+  padding: 10px 29px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  border-radius: 4px;
+  border: 0;
+  background-color: getColor("active");
+  color: getColor("white");
+  cursor: pointer;
+}
+
+.subscribe-button::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(/img/telegram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

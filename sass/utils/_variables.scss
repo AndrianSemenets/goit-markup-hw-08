@@ -1,0 +1,16 @@
+$colors: (
+  "white": #ffffff,
+  "black": #000000,
+  "active": #2196f3,
+  "primary-text": #212121,
+  "secondary-text": #757575,
+  "gray-bgc": #f5f4fa,
+  "background-dark": #2f303a,
+  "ctcs": rgba(255, 255, 255, 0.6),
+  "port-line": #ececec,
+  "decoration-color": #afb1b8,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
