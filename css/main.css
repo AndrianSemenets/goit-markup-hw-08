@@ -141,6 +141,41 @@ summary {
   display: list-item;
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap);
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap);
+  font-style: normal;
+  font-weight: 700;
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
