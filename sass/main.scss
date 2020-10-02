@@ -1,8 +1,10 @@
 @import "./base/normalize.min";
 @import "./utils/variables";
+@import "./base/fonts";
 @import "./utils/mixins";
 @import "./utils/placeholders";
 @import "./base/global";
+@import "./components/templates";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/modal";

@@ -1,0 +1,53 @@
+.link {
+  text-decoration: none;
+  display: block;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-title {
+  @extend %titleMargin;
+  @include fontParam(36px, 700, 1.16, 0.03em);
+  color: getColor("primary-text");
+  text-align: center;
+}
+
+.logo-header {
+  @include fontParam(26px, 700, 1.19, 0.03);
+  margin-right: 93px;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+}
+
+.social {
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social .link {
+  & {
+    @include flexBox(center, center);
+    @include transition(background-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: getColor("active");
+  }
+}
+
+.icon {
+  @include transition(fill);
+  @include svgIcon(20px, 20px, getColor("decoration-color"));
+}

@@ -9,7 +9,6 @@
 .clients .link {
   @include flexBox(center, center);
   @include transition(background-color);
-
   width: 170px;
   height: 90px;
   border: 1px solid getColor("decoration-color");

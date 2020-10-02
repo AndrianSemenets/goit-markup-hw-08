@@ -142,35 +142,35 @@ summary {
 }
 
 @font-face {
-  font-family: Roboto;
-  src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+  font-family: "Roboto";
+  src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap);
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: "Roboto";
   src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: "Roboto";
   src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap);
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: "Roboto";
   src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap);
   font-style: normal;
   font-weight: 900;
 }
 
 @font-face {
-  font-family: Raleway;
+  font-family: "Raleway";
   src: url(https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap);
   font-style: normal;
   font-weight: 700;
@@ -232,17 +232,6 @@ img {
   overflow: hidden;
 }
 
-.link {
-  text-decoration: none;
-  display: block;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .logo {
   color: #2196f3;
 }
@@ -253,6 +242,17 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .section-title {
@@ -271,7 +271,7 @@ img {
   letter-spacing: 0.03;
   margin-right: 93px;
   color: #000000;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   text-decoration: none;
 }
 
