@@ -1,16 +1,27 @@
 $colors: (
-  "white": #ffffff,
-  "black": #000000,
-  "active": #2196f3,
-  "primary-text": #212121,
-  "secondary-text": #757575,
-  "gray-bgc": #f5f4fa,
-  "background-dark": #2f303a,
-  "ctcs": rgba(255, 255, 255, 0.6),
-  "port-line": #ececec,
-  "decoration-color": #afb1b8,
+	"white": #ffffff,
+	"active": #2196f3,
+	"primary-text": #212121,
+	"secondary-text": #757575,
+	"gray-bgc": #f5f4fa,
+	"background-dark": #2f303a,
+	"ctcs": rgba(255, 255, 255, 0.6),
+	"port-line": #ececec,
+	"decoration": #afb1b8,
 );
 
 @function getColor($key) {
-  @return map-get($colors, $key);
+	@return map-get($colors, $key);
 }
+
+$font-family-1: "Roboto", sans-serif;
+$font-family-2: "Raleway", sans-serif;
+
+$font-normal: 400px;
+$font-medium: 500px;
+$font-bold: 700px;
+$font-ultra-bold: 900px;
+
+$font-size-title: 36px;
+$font-size-primary: 14px;
+$font-size-links: 16px;

@@ -1,0 +1,62 @@
+.hero {
+	@include flexBox(center, center);
+
+	height: 400px;
+	min-width: 480px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	background-color: #c4c4c4;
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url(../img/tablet/bg-tablet.jpg);
+	background-position: center;
+	background-size: cover;
+
+	@media screen and (min-device-pixel-ratio: 2),
+		screen and (min-resolution: 192dpi),
+		screen and (min-resolution: 2dppx) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../img/tablet/bg-tablet@2x.jpg);
+	}
+
+	@include for-size(tablet) {
+		min-width: 768px;
+	}
+
+	@include for-size(desktop) {
+		max-width: 1600px;
+		height: 600px;
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../img/desktop/bg.jpg);
+
+		@media screen and (min-device-pixel-ratio: 2),
+			screen and (min-resolution: 192dpi),
+			screen and (min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../img/desktop/bg@2x.jpg);
+		}
+	}
+
+	&__container {
+		@include flexBox(center, center);
+		flex-direction: column;
+		max-width: 360px;
+	}
+
+	&__title {
+		@include fontParam(26px, 900, 1.62, 0.06em);
+
+		display: inline-block;
+		margin-bottom: 30px;
+		color: getColor("white");
+		text-transform: uppercase;
+	}
+
+	&__btn {
+		@include button(10px 32px, getColor("active"));
+		@include fontParam(16px, 700, 1.87, 0.06em);
+
+		color: getColor("white");
+		font-family: inherit;
+	}
+}
