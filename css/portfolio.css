@@ -751,6 +751,18 @@ img {
   }
 }
 
+@media (min-width: 768px) {
+  .examples__container {
+    width: calc(768px - 18px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .examples__container {
+    width: calc(1200px - 18px);
+  }
+}
+
 .examples__nav {
   margin-bottom: 40px;
 }
