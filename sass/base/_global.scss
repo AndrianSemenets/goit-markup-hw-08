@@ -1,19 +1,19 @@
 *::selection {
-	background: transparent;
+  background: transparent;
 }
 
 body {
-	@include fontParam();
+  @include fontParam();
 
-	position: relative;
-	color: getColor("secondary-text");
-	background-color: getColor("white");
-	font-family: "Roboto", sans-serif;
+  position: relative;
+  color: getColor("secondary-text");
+  background-color: getColor("white");
+  font-family: "Roboto", sans-serif;
 }
 
 picture,
 img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
