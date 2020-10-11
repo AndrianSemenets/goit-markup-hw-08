@@ -1089,6 +1089,12 @@ img {
   color: #212121;
 }
 
+@media (min-width: 480px) {
+  .advantages__title {
+    text-align: center;
+  }
+}
+
 @media (max-width: 1199px) {
   .service {
     display: none;

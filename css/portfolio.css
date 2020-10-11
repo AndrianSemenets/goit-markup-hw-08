@@ -765,6 +765,7 @@ img {
 
 .examples__nav {
   margin-bottom: 40px;
+  margin-top: 60px;
 }
 
 @media (min-width: 768px) {
